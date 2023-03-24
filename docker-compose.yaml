@@ -1,0 +1,11 @@
+services:
+  postgres:
+    image: postgres
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: qwe123
+      # POSTGRES_DB: Db_CRUD_TEST
+    volumes:
+      - ./data:/var/lib/postgresql/data
+    ports:
+      - "6543:5432"
